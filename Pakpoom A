@@ -117,7 +117,6 @@ class LinearRegression:
                     
                 print("Stop at iteration: ", iter_stop)                    
 
-
         else: # => self.method == "Sto Gradient"
             X_train = X
             y_train = y
@@ -148,8 +147,6 @@ class LinearRegression:
                     
                 print("Stop at iteration: ", iter_stop)
             
-
-
 # try put method = "Batch Gradient" or "Sto Gradient" or "Mini-Batch Gradient"
 model = LinearRegression(method="Mini-Batch Gradient") 
 model.fit(X_train, y_train)
